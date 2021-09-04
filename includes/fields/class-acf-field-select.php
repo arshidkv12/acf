@@ -98,7 +98,7 @@ if ( ! class_exists( 'acf_field_select' ) ) :
 
 			// enqueue
 			wp_enqueue_script( 'select2', $script, array( 'jquery' ), $version );
-			wp_enqueue_style( 'select2', $style, '', $version );
+			wp_enqueue_style( 'select2', $style, array(), $version );
 
 			// localize
 			acf_localize_data(
